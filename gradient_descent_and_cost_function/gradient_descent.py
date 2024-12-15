@@ -18,7 +18,7 @@ def gradient_descent(x, y):
     plt.scatter(x, y, color="red", marker="o", linewidths=5)
     for i in range(iteration):
         yp = x * m_curr + b_curr
-        plt.plot(x,yp,color='green')
+        plt.plot(x, yp, color='green')
         cost = (1/n) * sum([val**2 for val in (y - yp)])
         md = -(2/n) * sum(x * (y - yp))
         bd = -(2/n) * sum(y - yp)

@@ -34,8 +34,9 @@ print(f"Predicted Area(sq. ft.): {area} | Bedrooms: {bedrooms} | Age: {age}")
 predictionDataFrame = pd.DataFrame({"area":[area], "bedrooms":[bedrooms], "age":[age]})
 predictedHomePrice = model.predict(predictionDataFrame)
 
+print("================================================")
 print(f"The predicted price for a home with an area of {area} sq. ft, {bedrooms} bedrooms, and {age} years old is ${predictedHomePrice[0]:.2f}.")
-
+print("================================================")
 
 
 print("ML Model Run...")

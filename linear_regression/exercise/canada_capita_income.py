@@ -1,5 +1,5 @@
 """
-Exercise Simple Linear Regression
+Exercise on Simple Linear Regression
 """
 
 

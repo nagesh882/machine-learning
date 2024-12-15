@@ -11,9 +11,9 @@ import matplotlib.pyplot as plt
 def gradient_descent(x, y):
 
     m_curr = b_curr = 0
-    iteration = 1000
+    iteration = 10000
     n = len(x)
-    learning_rate = 0.008
+    learning_rate = 0.01
     plt.figure(figsize=(8, 6))
     plt.scatter(x, y, color="red", marker="o", linewidths=5)
     for i in range(iteration):

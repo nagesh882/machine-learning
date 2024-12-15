@@ -14,4 +14,7 @@ from sklearn import linear_model
 
 
 
-dataFrame = pd.read_csv()
+dataFrame = pd.read_csv("/home/ubuntu/Documents/machine-learning/homeprices.csv")
+
+dataFrame.columns = dataFrame.columns.str.strip().str.lower()
+print(dataFrame)
